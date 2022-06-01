@@ -22,9 +22,10 @@ interface BGServiceInterface {
      * @param string $account
      * @param string $betId
      * @param string $vendorCode
+     * @param string $language
      * @return mixed
      */
-    function gameDetail(string $opCode, string $account, string $betId, string $vendorCode);
+    function gameDetail(string $opCode, string $account, string $betId, string $vendorCode, string $language = '');
 
     /**
      * 抓取遊戲紀錄
