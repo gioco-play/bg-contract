@@ -12,9 +12,10 @@ interface BGServiceInterface {
      * @param string $language
      * @param string $vendorCode
      * @param string $backUrl
+     * @param string $oddType
      * @return mixed
      */
-    function gameLaunch(string $opCode, string $account, string $gameCode, string $language, string $vendorCode, string $backUrl = null);
+    function gameLaunch(string $opCode, string $account, string $gameCode, string $language, string $vendorCode, string $backUrl = null, string $oddType = null);
 
     /**
      * 遊戲詳情
